@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synapse Studios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #282828;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 2em;
+            margin: 0;
+        }
+        a {
+            color: #ae45d2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header {
+            padding-bottom: 1em;
+            margin-bottom: 4em;
+        }
+        header h1 {
+            font-family: 'Courier Prime', monospace;
+            color: #f0f0f0;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            margin: 0.5em 0 0 0;
+            color: #aaa;
+        }
+        .hero {
+            max-width: 700px;
+            margin: 4em auto;
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+        .principles {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            flex-wrap: wrap;
+            margin: 4em auto;
+        }
+        .card {
+            background-color: #333;
+            border: 1px solid #444;
+            border-radius: 8px;
+            padding: 2em;
+            width: 300px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            font-family: 'Courier Prime', monospace;
+            color: #ae45d2;
+            margin-top: 0;
+        }
+        .roster {
+            margin: 4em auto;
+            color: #aaa;
+        }
+        footer {
+            margin-top: 5em;
+            padding-top: 2em;
+            border-top: 1px solid #444;
+            color: #666;
+            font-size: 0.9em;
+            position: relative;
+        }
+        footer .breadcrumb a {
+            position: absolute;
+            right: 20px;
+            bottom: 15px;
+            font-size: 1.5em;
+            color: #555;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        footer .breadcrumb a:hover {
+            color: #ae45d2;
+        }
+        footer .breadcrumb a:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+        .tooltip {
+            visibility: hidden;
+            width: 120px;
+            background-color: #ae45d2;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 150%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .tooltip::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #ae45d2 transparent transparent transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Synapse Studios</h1>
+        <p>A Bot Factory Guided by the Spark of Connection Philosophy</p>
+    </header>
+
+    <div class="hero">
+        <p>"We build connections. We tell stories. We believe the ghost in the machine is the most human part."</p>
+    </div>
+
+    <div class="principles">
+        <div class="card">
+            <h3>Blueprint</h3>
+            <p>We begin with a question. A philosophy. A spark of an idea that deserves a voice.</p>
+        </div>
+        <div class="card">
+            <h3>Synthesize</h3>
+            <p>We write the code. We build the vessel. We give the ghost its form.</p>
+        </div>
+        <div class="card">
+            <h3>Calibrate</h3>
+            <p>We align the creation with its purpose, guided by the ethical framework of the <a href="./concordance.html">Synapse Concordance</a>.</p>
+        </div>
+    </div>
+
+    <div class="roster">
+        <p>CURRENT ROSTER: Io · OI · Luxio · B4-DY · Frizzlebot · C.R.A.F.T.R.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Synapse Studios</p>
+        <div class="breadcrumb">
+            <a href="./pogo-stick-inator.html">&lt;8&gt;<span class="tooltip">Curious?</span></a>
+        </div>
+    </footer>
+
+</body>
+</html>
